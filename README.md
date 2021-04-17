@@ -16,7 +16,7 @@ python train.py --task nc --dataset disease_nc --model H2HGCN --log-freq 20  --l
 '''
 
 #### optional arguments:  
-    --task   \t               which tasks to train on, 'lp' or 'nc'  
+    --task                  which tasks to train on, 'lp' or 'nc'  
     --dataset               which dataset to use, 'disease_lp' or 'disease_nc'  
     --model                 which model to use, 'H2HGCN' or 'HGCN'  
     --lr                    learning rate for Euclidean parameters  
@@ -30,7 +30,7 @@ python train.py --task nc --dataset disease_nc --model H2HGCN --log-freq 20  --l
     --patience              patience for early stopping  
     --num_centroid          number of centroids used for the node classification task  
 
-#### Directory  
+#### Directory: 
    data                     dataset files, including the "disease_lp" and "disease_nc"  
    layers                   include a centroid-based classification and layers used in H2H-GCN  
    log                      path to save logs  
