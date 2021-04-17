@@ -5,17 +5,15 @@ This repository includes the implementations of the proposed H2H-GCN for the lin
 
 Before running the model, please create environment according to "requirments.txt".
 
-For link prediction, run
+###For link prediction, run
 '''
 python train.py --task lp --dataset disease_lp --model H2HGCN  --normalize-feats 0 --log-freq 20   --epochs 8000  --step_lr_reduce_freq 7000 --feature_dim 11  --tie_weight True --patience 1000  --lr 0.001 --lr_stie 0.001  --dim 16 --num-layers 2
 '''
 
-For node classification, run
+###For node classification, run
 '''
 python train.py --task nc --dataset disease_nc --model H2HGCN --log-freq 20  --lr_scheduler step --epochs 5000 --step_lr_reduce_freq 5000 --feature_dim 1000  --tie_weight True   --lr 0.01  --lr_stie 0.01 --num_centroid 200 --dim 16  --num-layers 5
 '''
-
-For higher results, please set "grid_search = True" in line 134 of file "train.py" to use grid search to select the optimal hyper-parameters. 
 
 optional arguments:
     --task                  which tasks to train on, 'lp' or 'nc'
@@ -48,4 +46,4 @@ Directory
 
 
 References
-[1] Chami, I., Ying, R., Ré, C. and Leskovec, J. Hyperbolic Graph Convolutional Neural Networks. NIPS 2019.
+[1] [Chami, I., Ying, R., Ré, C. and Leskovec, J. Hyperbolic Graph Convolutional Neural Networks. NIPS 2019.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7108814/)
