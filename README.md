@@ -7,7 +7,7 @@ Before running the model, please create environment according to "requirments.tx
 
 ### For link prediction, run
 '''
-python train.py --task lp --dataset disease_lp --model H2HGCN  --normalize-feats 0 --log-freq 20   --epochs 8000  --step_lr_reduce_freq 7000 --feature_dim 11  --tie_weight True --patience 1000  --lr 0.001 --lr_stie 0.001  --dim 16 --num-layers 2
+python train.py --task lp --dataset disease_lp --model H2HGCN  --normalize-feats 0 --log-freq 20   --epochs 5000  --step_lr_reduce_freq 5000 --feature_dim 11  --tie_weight True --patience 1000  --lr 0.001 --lr_stie 0.001  --dim 16 --num-layers 2
 '''
 
 ### For node classification, run
@@ -30,9 +30,10 @@ python train.py --task nc --dataset disease_nc --model H2HGCN --log-freq 20  --l
     --patience              patience for early stopping  
     --num_centroid          number of centroids used for the node classification task  
 
+
 #### Directory: 
-   data                     dataset files, including the "disease_lp" and "disease_nc"  
-   layers                   include a centroid-based classification and layers used in H2H-GCN  
+   --data                     dataset files, including the "disease_lp" and "disease_nc"  
+   --layers                   include a centroid-based classification and layers used in H2H-GCN  
    log                      path to save logs  
    manifolds                include the Lorentz manifold and the Stiefel manifold  
    model_save               path to save trained models  
