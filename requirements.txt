@@ -1,0 +1,6 @@
+python==3.7.7
+numpy==1.19.1
+torch==1.6.0
+torchvision==0.7.0
+networkx==2.4
+sklearn==0.23.2
