@@ -18,7 +18,7 @@ python train.py --task nc --dataset disease_nc --model H2HGCN --log-freq 20  --l
 #### optional arguments:  
     --task                  which tasks to train on, 'lp' or 'nc'  
     --dataset               which dataset to use, 'disease_lp' or 'disease_nc'  
-    --model                 which model to use, 'H2HGCN' or 'HGCN'  
+    --model                 which model to use   
     --lr                    learning rate for Euclidean parameters  
     --lr_stie               learning rate for the Stiefel parameters  
     --normalize-feats       whether to normalize input node features  
@@ -32,18 +32,18 @@ python train.py --task nc --dataset disease_nc --model H2HGCN --log-freq 20  --l
 
 
 #### Directory: 
-   --data                     dataset files, including the "disease_lp" and "disease_nc"  
-   --layers                   include a centroid-based classification and layers used in H2H-GCN  
-   log                      path to save logs  
-   manifolds                include the Lorentz manifold and the Stiefel manifold  
-   model_save               path to save trained models  
-   models                   encoder for graph embedding and decoder for post-processing  
-   optimizers               optimizers for orthogonal parameters  
-   utils                    utility modules and functions  
-   config.py                config file  
-   train.py                 run this file to start the training  
-   requirements.txt         requirements file  
-   README.md                README file  
+       data                     datasets files, including the "disease_lp" and "disease_nc"  
+       layers                   include a centroid-based classification and layers used in H2H-GCN  
+       log                      path to save logs  
+       manifolds                include the Lorentz manifold and the Stiefel manifold  
+       model_save               path to save trained models  
+       models                   encoder for graph embedding and decoder for post-processing  
+       optimizers               optimizers for orthogonal parameters  
+       utils                    utility modules and functions  
+       config.py                config file  
+       train.py                 run this file to start the training  
+       requirements.txt         requirements file  
+       README.md                README file  
 
 
 ### References
