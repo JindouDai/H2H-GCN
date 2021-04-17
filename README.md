@@ -1,7 +1,7 @@
 A Hyperbolic-to-Hyperbolic Graph Convolutional Network (H2H-GCN)
 ======================================================
 
-This repository includes the implementations of the proposed H2H-GCN for the link prediction and node classification tasks on the Disease dateset [1] in PyTorch. 
+This repository includes the implementations of H2H-GCN for the link prediction and node classification tasks on the Disease dateset [1] in PyTorch. 
 
 Before running the model, please create environment according to "requirments.txt".
 
