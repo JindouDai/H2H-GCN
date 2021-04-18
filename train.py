@@ -131,7 +131,8 @@ def cal_std(acc):
 
 if __name__ == '__main__':
     os.environ["CUDA_VISIBLE_DEVICES"] = '0'
-
+    if self.model == 'H2HGCN':
+        args.dim = args.dim + 1
     result_list = []
     for i in range(10):
         args = parser.parse_args()
