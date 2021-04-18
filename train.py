@@ -131,15 +131,15 @@ def cal_std(acc):
 
 if __name__ == '__main__':
     os.environ["CUDA_VISIBLE_DEVICES"] = '0'
-    if self.model == 'H2HGCN':
-        args.dim = args.dim + 1
+    
     result_list = []
     for i in range(10):
         args = parser.parse_args()
+        if args.model == 'H2HGCN':
+            args.dim = args.dim + 1
         args.weight_manifold = StiefelManifold(args, 1)
         args.stie_vars = []
         args.eucl_vars = []
-        # set_seed(int(time.time()))
         set_seed(args.seed)
         result = train(args)
         result_list.append(result)
