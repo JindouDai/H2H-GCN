@@ -7,12 +7,12 @@ Before running the model, please create environment according to "requirments.tx
 
 ### For link prediction, run
 '''
-python train.py --task lp --dataset disease_lp --model H2HGCN  --normalize-feats 0 --log-freq 20   --epochs 5000  --step_lr_reduce_freq 5000 --feature_dim 11  --tie_weight True --patience 1000  --lr 0.001 --lr_stie 0.001  --dim 16 --num-layers 2
+python train.py --task lp --dataset disease_lp --model H2HGCN  --normalize-feats 0 --log-freq 20   --epochs 5000  --step_lr_reduce_freq 5000 --feature_dim 11  --tie_weight True --patience 1000  --lr 0.001 --lr_stie 0.001  --dim 256 --num-layers 2
 '''
 
 ### For node classification, run
 '''
-python train.py --task nc --dataset disease_nc --model H2HGCN --log-freq 20  --lr_scheduler step --epochs 5000 --step_lr_reduce_freq 5000 --feature_dim 1000  --tie_weight True   --lr 0.01  --lr_stie 0.01 --num_centroid 200 --dim 16  --num-layers 5
+python train.py --task nc --dataset disease_nc --model H2HGCN --log-freq 20  --lr_scheduler step --epochs 5000 --step_lr_reduce_freq 5000 --feature_dim 1000  --tie_weight True   --lr 0.01  --lr_stie 0.01 --num_centroid 200 --dim 64  --num-layers 5
 '''
 
 #### optional arguments:  
