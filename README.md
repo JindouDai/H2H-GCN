@@ -45,7 +45,7 @@ python train.py --task nc --dataset disease_nc --model H2HGCN --log-freq 20  --l
        requirements.txt         requirements file  
        README.md                README file  
 
-The supplementary results of Table 1 will be updated. Please wait...
+(Note: the submission on the Arxiv is not the camera-ready version.)
 
 ### References
 [1] [Chami, I., Ying, R., Ré, C. and Leskovec, J. Hyperbolic Graph Convolutional Neural Networks. NIPS 2019.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7108814/)
